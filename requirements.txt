@@ -1,0 +1,3 @@
+transformers>=4.55.0
+accelerate>=0.34.2
+flash_attn>=2.6.3
