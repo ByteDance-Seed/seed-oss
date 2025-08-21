@@ -580,12 +580,18 @@ python3 -m vllm.entrypoints.openai.api_server \
 Chat
 
 ```shell
-python3 inference/vllm_chat.py
+# no stream
+python3 inference/vllm_chat.py --max_new_tokens 4096 --thinking_budget -1
+# stream
+python3 inference/vllm_chat.py --max_new_tokens 4096 --thinking_budget -1 --stream
 ```
 
 Tool Call
 ```shell
-python3 inference/vllm_tool_call.py
+# no stream
+python3 inference/vllm_tool_call.py --max_new_tokens 4096 --thinking_budget -1
+# stream
+python3 inference/vllm_tool_call.py --max_new_tokens 4096 --thinking_budget -1 --stream
 ```
 
 
