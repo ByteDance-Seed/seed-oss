@@ -487,7 +487,7 @@ If no thinking budget is set (default mode), Seed-OSS will initiate thinking wit
 ## Quick Start
 ```shell
 pip3 install -r requirements.txt
-pip install git+ssh://git@github.com/Fazziekey/transformers.git@seed-oss
+pip install git+https://github.com/Fazziekey/transformers.git@seed-oss
 ```
 
 ```python
