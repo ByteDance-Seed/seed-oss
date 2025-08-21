@@ -20,25 +20,28 @@ As a general purpose model, Seed-OSS can support multiple use cases, including q
   - Assistance with content creation (e.g., drafting, summarizing, editing).
   - Auxiliary information retrieval in non-critical scenarios.
 
-For developers who intend to build customized models or applications on top of this model, please be aware that you are fully responsible for the customized model or your application. This includes conducting your own risk assessments, implementing additional safety measures, and ensuring your application is compliant with all applicable laws.
-
 **Prohibited Uses**:
   - **Professional medical, legal, or financial advice**. 
   - **Automatic decision-making**:  Used for high-risk, high-impact automatic decision-making unless it has been rigorously fine-tuned and evaluated by humans for that specific use case.
+  - **Minor Safety**:  Abuse, exploit, or harm a minor or individual under the age of consent, including grooming, or child sexual exploitation
   - **Illegal Activities**: Violating any laws, including fraud, terrorism, or generating Child Sexual Abuse Material (CSAM).
   - **Hate & Harassment**: Generating discriminatory, hateful, or harassing content.
-  - **Disinformation & Political Propaganda**: Spreading false information, especially to influence elections or for geopolitical manipulation.
+  - **Misinformation**: Engaging in disinformation, misinformation, or deceptive activities, including but not limited to passing off or representing AI-generated content as human-generated.
   - **Military & Surveillance**: Any use for military, weaponry, intelligence gathering, or mass surveillance purposes.
-  - **High-Risk Harm**: Generating sexually explicit material, violating privacy (e.g., PII), or providing unqualified medical, legal, or financial advice.
+  - **High-Risk Harm**: Generating sexually explicit material, violating privacy (e.g., PII).
 
 **Limitations**:
   - **Languages**: Seed-OSS is an **international (i18n)** model. It is primarily optimized for and evaluated in **English**. Performance in other languages is limited and not robustly tested.
   - **Training Data**: The training data is predominantly from publicly available sources, the models understanding of specific cultures, values and historical events may be incomplete.
   - **Hallucination**: Models generate content based on the statistical patterns in their training data. The model may generate information that is incorrect or entirely fictional. 
-  - **Harmful Content Generation**: Despite safety alignment, the model may still generate inappropriate or harmful content, especially when subjected to adversarial prompts (jailbreaking).
+  - **Harmful Content Generation**: Like any large language model, Seed-OSS may still be capable of producing outputs which are considered harmful, inaccurate or offensive—despite extensive safety training. We encourage developers to conduct their own testing, ensure human oversight and deploy mitigation strategies for their specific use cases.
+
+For developers who intend to build customized models or applications on top of this model, please be aware that you are fully responsible for the customized model or your application, and ensuring your application is compliant with all applicable laws.
+
+Nothing contained in this Model Card should be interpreted as or deemed a restriction or modification to the license the model is released under.
 
 ## Content Safety Measures
-We designed relevant measures to ensure the model's content safety throughout the entire model training cycle, ranging from training data preparation to model training and evaluation.
+We designed relevant measures to ensure the model's content safety throughout the entire model training cycle, ranging from training data preparation to model training and evaluation. Prior to launch, Seed-OSS went through numerous safety and security reviews led by a global Safety and Security team based in Singapore. This includes:
 - **Training Data Filtering**: Data cleaning and content filtering mechanism is designed and executed to ensure that no CSAM or highly toxic content data is included in the training dataset. PII removal is also performed through a combination of algorithmic and manual checks. 
 - **Safety Fine-Tuning**: Safety training is executed during the  Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF/PPO) training stages to minimize the likelihood of harmful outputs. 
 - **Evaluation**: Regular safety testing and adversarial testing are conducted to identify and address safety vulnerabilities.
