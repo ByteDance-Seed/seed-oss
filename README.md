@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/badge/Seed-Project Page-yellow"></a>
   <a href="https://github.com/ByteDance-Seed/seed-oss">
     <img src="https://img.shields.io/badge/Seed-Tech Report Coming Soon-red"></a>
-  <a href="https://huggingface.co/ByteDance-Seed">
+  <a href="https://huggingface.co/collections/ByteDance-Seed/seed-oss-68a609f4201e788db05b5dcd">
     <img src="https://img.shields.io/badge/Seed-Hugging Face-orange"></a>
   <br>
   <a href="./LICENSE">
@@ -451,6 +451,8 @@ Incorporating synthetic instruction data into pretraining leads to improved perf
 - "*" indicates that the results in this column are presented in the format of "reproduced_results (reported_results_if_any)". Some results have been omitted due to the failure of the evaluation run.
 </sup><br/><sup>
 - The results of Gemma3-27B are sourced directly from its technical report.
+</sup><br/><sup>
+- The results of ArcAGI-V2 were measured on the official training set, which was not involved in the training process.
 </sup><br/><sup>
 - Generation configs for Seed-OSS-36B-Instruct: temperature=1.1, top_p=0.95. Specifically, for Taubench, temperature=1, top_p=0.7.
 </sup><br/><sup>
