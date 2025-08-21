@@ -317,6 +317,15 @@ Incorporating synthetic instruction data into pretraining leads to improved perf
 <td align="center">-</td>
 <td align="center"><ins>70.6</ins></td>
 </tr>
+<tr>
+<td align="center">HLE</td>
+<td align="center">13.9</td>
+<td align="center"><b>12.7</b> (10.9)</td>
+<td align="center">8.7</td>
+<td align="center">6.9</td>
+<td align="center">-</td>
+<td align="center"><ins>10.1</ins></td>
+</tr>
 
 <tr>
 <td align="center" colspan=7><strong>Coding</strong></td>
@@ -329,15 +338,6 @@ Incorporating synthetic instruction data into pretraining leads to improved perf
 <td align="center">53.4</td>
 <td align="center">-</td>
 <td align="center"><b>67.4</b></td>
-</tr>
-<tr>
-<td align="center">HLE</td>
-<td align="center">13.9</td>
-<td align="center"><b>12.7</b> (10.9)</td>
-<td align="center">8.7</td>
-<td align="center">6.9</td>
-<td align="center">-</td>
-<td align="center"><ins>10.1</ins></td>
 </tr>
 
 <tr>
