@@ -301,12 +301,12 @@ Incorporating synthetic instruction data into pretraining leads to improved perf
 </tr>
 <tr>
 <td align="center">ArcAGI V2</td>
-<td align="center">50.3</td>
-<td align="center"><b>41.7</b></td>
-<td align="center">37.8</td>
-<td align="center">14.4</td>
+<td align="center">1.16</td>
+<td align="center"><b>1.74</b></td>
+<td align="center">0.87</td>
+<td align="center">0</td>
 <td align="center">-</td>
-<td align="center"><ins>40.6</ins></td>
+<td align="center"><ins>1.45</ins></td>
 </tr>
 <tr>
 <td align="center">KORBench</td>
@@ -452,7 +452,7 @@ Incorporating synthetic instruction data into pretraining leads to improved perf
 </sup><br/><sup>
 - The results of Gemma3-27B are sourced directly from its technical report.
 </sup><br/><sup>
-- The results of ArcAGI-V2 were measured on the official training set, which was not involved in the training process.
+- The results of ArcAGI-V2 were measured on the official evaluation set, which was not involved in the training process.
 </sup><br/><sup>
 - Generation configs for Seed-OSS-36B-Instruct: temperature=1.1, top_p=0.95. Specifically, for Taubench, temperature=1, top_p=0.7.
 </sup><br/><sup>
@@ -487,7 +487,7 @@ If no thinking budget is set (default mode), Seed-OSS will initiate thinking wit
 ## Quick Start
 ```shell
 pip3 install -r requirements.txt
-pip install git+ssh://git@github.com/Fazziekey/transformers.git@seed-oss
+pip install git+https://github.com/huggingface/transformers.git
 ```
 
 ```python
@@ -559,7 +559,7 @@ Use vllm >= 0.10.0 or higher for inference.
 
 - First install vLLM with Seed-OSS support version:
 ```shell
-VLLM_USE_PRECOMPILED=1 VLLM_TEST_USE_PRECOMPILED_NIGHTLY_WHEEL=1 pip install git+ssh://git@github.com/FoolPlayer/vllm.git@seed-oss
+VLLM_USE_PRECOMPILED=1 VLLM_TEST_USE_PRECOMPILED_NIGHTLY_WHEEL=1 pip install git+https://github.com/vllm-project/vllm.git
 ```
 
 - Start vLLM API server:
