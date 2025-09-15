@@ -486,7 +486,7 @@ If no thinking budget is set (default mode), Seed-OSS will initiate thinking wit
 
 ## Quick Start
 ```shell
-pip install git+https://github.com/huggingface/transformers.git@56d68c6706ee052b445e1e476056ed92ac5eb383
+pip install transformers>=4.56.1
 ```
 
 ```python
@@ -554,11 +554,11 @@ python3 generate.py --model_path /path/to/model --prompts "['What is machine lea
 ```
 
 ### vLLM
-Use vllm >= 0.10.0 or higher for inference.
+Use vllm >= 0.10.2 or higher for inference.
 
 - First install vLLM with Seed-OSS support version:
 ```shell
-VLLM_USE_PRECOMPILED=1 VLLM_TEST_USE_PRECOMPILED_NIGHTLY_WHEEL=1 pip install git+https://github.com/vllm-project/vllm.git
+pip install vllm>=0.10.2
 ```
 
 - Start vLLM API server:
